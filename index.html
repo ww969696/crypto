@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE CRYPTO ASCENT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            background: linear-gradient(90deg, #ffcc00, #ff00ff, #00ffff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: shimmer 4s linear infinite;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @keyframes shimmer {
+            0% {background-position: -500px;}
+            100% {background-position: 500px;}
+        }
+
+        .subheadline {
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #ff00ff88;
+        }
+
+        .section {
+            margin-top: 80px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .glitch {
+            position: relative;
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .glitch:before,
+        .glitch:after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            color: #ff00ff;
+            background: transparent;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+        }
+
+        .glitch:before {
+            animation: glitchTop 2s infinite linear alternate-reverse;
+        }
+
+        .glitch:after {
+            color: #00ffff;
+            animation: glitchBottom 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitchTop {
+            0% {clip: rect(0, 9999px, 0, 0);}
+            50% {clip: rect(0, 9999px, 50px, 0);}
+            100% {clip: rect(0, 9999px, 0, 0);}
+        }
+
+        @keyframes glitchBottom {
+            0% {clip: rect(0, 9999px, 0, 0);}
+            50% {clip: rect(30px, 9999px, 80px, 0);}
+            100% {clip: rect(0, 9999px, 0, 0);}
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #ff00ff, #ffcc00, #00ffff);
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.2em;
+            margin-top: 50px;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: default;
+            box-shadow: 0 0 20px #ff00ff88;
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 100px;
+            font-size: 0.8em;
+            opacity: 0.5;
+        }
+
+        .alex {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ff00ff88;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ELEVATE. TRANSFORM. ASCEND.</h1>
+        <p class="subheadline">A One-Time Opportunity to Unlock Crypto Secrets the 1% Don’t Want You to Know.</p>
+
+        <div class="section">
+            <div class="glitch" data-text="This Isn’t a Course. It’s a Mindset Shift.">This Isn’t a Course. It’s a Mindset Shift.</div>
+
+            <p>Learn what <b>only the elite circles</b> discuss behind closed doors. We don’t sell knowledge. We sell elevation.</p>
+
+            <p><b>Price:</b> <span style="font-size:1.3em; color: #ffcc00;">$10,000 USD</span>. Because if you have to ask, you’re not ready.</p>
+
+            <h2 style="margin-top:50px;">Why So Expensive?</h2>
+            <ul style="list-style: none; padding:0; line-height:2;">
+                <li>🚀 Access to information that cannot be Googled</li>
+                <li>🧠 Private crypto strategies from discreet insider circles</li>
+                <li>💎 Quantum-level wealth generation models</li>
+                <li>🔒 Lifetime invite to <b>The Ascent Circle</b> (private Discord)</li>
+            </ul>
+
+            <h2 style="margin-top:50px;">Meet Alex</h2>
+            <p><i>Former insider. Blockchain pioneer. Connector of dots others don’t even see.</i></p>
+
+            <div class="btn">Contact Alex</div>
+            <div class="alex">Alex</div>
+        </div>
+
+        <div class="footer">
+            <p>We don’t offer refunds. We offer results.</p>
+            <p>This is not financial advice. Participation is voluntary. Results may vary.</p>
+        </div>
+    </div>
+
+</body>
+</html>
